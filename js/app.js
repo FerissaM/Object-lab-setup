@@ -70,7 +70,7 @@ sayHello(bigFoot.woodlandFriends[2])
 
 
 // To print out deer from the woodland friends
-console.log(bigFoot.woodlandFriends[1])
+console.log(bigFoot.woodlandFriends[2])
 
 
 // I want to see if bigFoot is real
@@ -93,3 +93,25 @@ console.log(bigFoot)
 // change the diet of bigFoot
 bigFoot.diet = 'pescatarian';
 console.log(bigFoot.diet)
+
+
+
+const bodyEl = document.querySelector('body')
+
+bodyEl.addEventListener('click', function()) {
+    // this function occurs when the user clicks on the bodyEl
+}
+
+function randomRgb(){
+    // return a string rgb (223, 243, 198)
+    // How do I get a random number between 0 255 in javascript?
+   const r = Math.floor(Math.random()*256);
+   const g = Math.floor(Math.random()*256);
+   const b = Math.floor(Math.random()*256);
+
+   return `rgb(${r}, ${g}, ${b})`
+}
+
+bodyEl.style.backgroundColor = randomRgb();
+
+bodyEl.style.backgroundColor = 'red'
